@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Handjet:wght@600&family=Poppins:wght@200;400&display=swap');
+
+body {
+    clear: right;
+    background-color: rgb(252, 231, 235);
+    width: 800px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-variant: normal;
+    font-size: medium;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "item1 item2 item2"
+        "item3 item3 item3"
+        "item4 item4 item4"
+        "footer footer footer";
+}
+
+/* CSS grid */
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+section:first-of-type {
+    grid-area: item1;
+}
+
+section:nth-of-type(2) {
+    grid-area: item2;
+}
+
+section:nth-of-type(3) {
+    grid-area: item3;
+}
+
+section:nth-of-type(4) {
+    grid-area: item4;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Flexbox */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Title */
+body header {
+    clear:right;
+    font-family: 'Handjet', cursive;
+    letter-spacing: 5px;
+    font-size: xx-large;
+    width:max-content;
+    height:max-content;
+    border-style: dashed;
+    border-color: pink;
+    color: #CC99A2;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* navbar */
+p nav {
+    list-style-type: none;
+    float: left;
+}
+
+nav a {
+    margin: auto;
+    padding: 10px;
+    border-style: outset;
+    text-align: center;
+    border-color: #CC99A2;
+    color: #803945;
+    background-color: pink;
+    font-size: small;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin: auto;
+}
+
+nav a:hover {
+    background-color: #d098a1;
+}
+
+div a:not(.active) {
+    color: #d098a1;
+}
+
+div a:visited {
+    color: #803945;
+}
+
+div a:hover {
+    color: hotpink;
+}
+
+p {
+    margin: 10px
+}
+
+img {
+    margin: 10px
+}
+
+hr {
+    margin: 10px;
+}
+
+blockquote {
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    border-style: dashed;
+    border-color: #CC99A2;
+}
+
+aside {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    width:max-content;
+    height:max-content;
+    border-style: dashed;
+    border-color: #CC99A2;
+    width: 20%;
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+}
